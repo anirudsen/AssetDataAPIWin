@@ -14,6 +14,7 @@ def home():
     import os
 
     connectionstring=os.getenv("SQLAZURECONNSTR_mdpappdb")
+    print(connectionstring)
     
     import pyodbc
     conn=pyodbc.connect(connectionstring)
